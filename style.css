@@ -7,30 +7,35 @@ body { background-color: #000; color: #ccc; font-family: 'Georgia', serif; overf
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 .header-main.visible { opacity: 1; transform: translateY(0); }
+
+/* Titolo riadattato per non sovrastare il sottotitolo */
 .header-main h1 { 
-    font-size: 1.9rem; text-transform: uppercase; letter-spacing: 7px; 
+    font-size: 1.4rem; text-transform: uppercase; letter-spacing: 5px; 
     background: linear-gradient(to bottom, #ffffff 0%, #666666 100%);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     display: inline-block;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
 
 .header-main .subtitle { 
     font-size: 0.7rem; 
     text-transform: uppercase; 
-    letter-spacing: 5px; 
+    letter-spacing: 4px; 
     color: #1e3a8a; 
     text-shadow: 0 0 10px #2563eb, 0 0 15px #1e3a8a;
     font-weight: bold;
     display: block; 
-    margin-top: 8px; 
 }
 
 .container-verticale { display: flex; flex-direction: column; align-items: center; }
 .slide { width: 90%; max-width: 450px; margin-bottom: 70px; background: #050505; border: 1px solid #111; }
 
 .img-box img { width: 100%; display: block; }
-.img-box-double { display: flex; width: 100%; }
-.img-box-double img { width: 50%; display: block; object-fit: cover; }
+
+/* Stile per immagini affiancate */
+.img-box-double { display: flex; width: 100%; border-bottom: 1px solid #111; }
+.img-box-double img { width: 50%; display: block; object-fit: cover; aspect-ratio: 1/1; }
 
 .descrizione-box { padding: 30px 25px; text-align: center; }
 .teschio { color: #555; font-size: 0.8rem; margin: 0 10px; vertical-align: middle; }
@@ -54,10 +59,21 @@ body { background-color: #000; color: #ccc; font-family: 'Georgia', serif; overf
     margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 8px; 
 }
 
+/* Scrollbar e area di testo */
 .testo-scorrevole {
-    height: 300px; overflow-y: scroll; text-align: center;
-    font-size: 0.95rem; line-height: 1.8; color: #666;
-    padding: 0 15px; white-space: pre-wrap; 
+    height: 300px; 
+    overflow-y: auto; 
+    text-align: center;
+    font-size: 0.95rem; 
+    line-height: 1.8; 
+    color: #666;
+    padding: 0 15px; 
+    white-space: pre-wrap; 
+}
+
+/* Altezza specifica per il testo dei tatuaggi per forzare lo scroll se necessario */
+#testo2 {
+    max-height: 150px;
 }
 
 .testo-scorrevole::-webkit-scrollbar { width: 1px; }
