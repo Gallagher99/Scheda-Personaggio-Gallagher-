@@ -3,84 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dove l'Uomo cede</title>
+    <title>Le Volonta dei Clegane</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Junge&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-overlay"></div>
 
-    <button id="audio-btn">🔊</button>
-    <audio id="bg-track" loop><source src="https://res.cloudinary.com/dqoncufhc/video/upload/v1771149878/Canzone1_h9dmnl.mp3" type="audio/mpeg"></audio>
+    <div class="audio-bar-container">
+        <button id="audio-btn">🔊</button>
+        <span id="time-display">0:00 / 0:00</span>
+        <input type="range" id="seek-slider" value="0" max="100">
+    </div>
+
+    <audio id="audio-slide-extra"></audio>
+    <audio id="bg-track" loop><source src="https://res.cloudinary.com/dqoncufhc/video/upload/v1773056043/Panic_At_The_Disco_-_Emperors_New_Clothes_cu7mgh.mp3"></audio>
 
     <header class="header-main" id="mainHeader">
         <h1>Forgiato dal fango condannato a ricordare</h1>
-        <span class="subtitle">Il mio sangue ricorda ciò che la mia mente vorrebbe dimenticare</span>
+        <span class="subtitle">"Il mio sangue ricorda ciò che la mia mente vorrebbe dimenticare"</span>
     </header>
 
     <div class="container-verticale">
         <section class="slide">
-            <div class="img-box"><img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1771903004/1771902522854_2_yxxmvw.jpg" alt="the human"></div>
+            <div class="img-box"><img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773235256/fb94a3cf-e220-415e-8f76-834e98fa2b50_gqap2l.png"></div>
         </section>
 
         <section class="slide">
             <div class="descrizione-box">
-                <span class="testo-blu-notte">"L'unica vera morte è non aver mai vissuto."</span>
+                <span class="testo-blu-notte">“L'unica vera morte è non aver mai vissuto.”</span>
                 <div class="testo-scorrevole">
-<span class="teschio">☠</span> Gallagher Clegane: <span class="teschio">☠</span>
+<span class="teschio">️🕯</span> Gallagher Clegane<span class="teschio">🕯</span>
 
-<span class="teschio">☠</span> Razza: <span class="teschio">☠</span>
+<span class="teschio">️🕯</span> Razza: <span class="teschio">️🕯</span>
 Umano
 
-<span class="teschio">☠</span> Sembianze: <span class="teschio">☠</span>
-Umane dagli occhi color whisky. Capelli corvini. Corporatura dall'ossatura robusta e dalla presenza imponente, ma non massiccia in senso atletico. La sua figura trasmette un senso di pesantezza e solidità, come quella di un veterano che ha passato anni sotto le armi o a svolgere lavori logoranti. Ha una postura leggermente incurvata, tipica di chi porta un peso invisibile sulle spalle, Il volto è segnato e stanco. Ha lineamenti decisi ma appesantiti da occhiaie profonde e una perenne espressione di disillusione. La mascella è spesso coperta da una barba incolta e trascurata che accentua il suo aspetto trasandato e ruvido.
+<span class="teschio">️🕯</span> Aspetto: <span class="teschio">️🕯</span>
 
-<span class="teschio">☠</span> Cittadinanza: <span class="teschio">☠</span>
- Nessuna
+Corporatura:
+È un uomo dall'ossatura robusta e dalla presenza imponente, ma non massiccia in senso atletico. La sua figura trasmette un senso di pesantezza e solidità, come quella di un veterano che ha passato anni sotto le armi a svolgere i lavori più logoranti. La sua postura è leggermente incurvata, quasi come se portasse un peso invisibile sulle proprie spalle.
 
-<span class="teschio">☠</span> Fuoco magico: <span class="teschio">☠</span>
-Viola Spettrale 
+​Altezza:
+È decisamente alto, sopra la media, il che lo rende una figura difficile da ignorare, nonostante cerchi spesso di confondersi tra i viaggiatori e gli avventuriere come un umano qualsiasi.
 
-<span class="teschio">☠</span> Cariche: <span class="teschio">☠</span>
-Nessuna
+​Tratti Sommatici:
+Il volto è segnato e perennemente stanco. Presenta lineamenti decisi, ma appesantiti da profonde occhiaie; l'espressione è solitamente calma e disillusa. La mascella è coperta da una barba incolta e trascurata di più giorni, che accentua il suo aspetto trasandato.
 
-<span class="teschio">☠</span> Nomi e identità: <span class="teschio">☠</span>
+​Capelli:
+I capelli sono scuri, corvini, e appaiono spesso spettinati o poco curati, ricadendo sul viso in modo disordinato. Questo contribuisce all'immagine di un uomo che ha smesso di preoccuparsi delle apparenze ormai da molto tempo.
+
+​Occhi:
+I suoi occhi sono color whisky, carichi di una malinconia e di una stanchezza che sembrano suggerire che abbia visto fin troppo. Raramente mostrano scintille di vitalità; solitamente restano socchiusi, vigili ma privi di alcun entusiasmo.
+   
+   <span class="teschio">️🕯</span> Carattere: <span class="teschio">️🕯</span> 
+  L’Uomo del "Vero e Falso": Gallagher è intrinsecamente un bugiardo, ma non per malvagità. Lui stesso si definisce un "impasto di bugie". È un uomo che maschera la verità per proteggere segreti più grandi o, semplicemente, perché la realtà è troppo dolorosa da gestire.
+  
+​Stanchezza Esistenziale: Il suo tratto più profondo è l'essere "stanco del mondo". Non è la stanchezza di chi ha bisogno di dormire, ma di chi ha vissuto troppo, ha visto troppe civiltà cadere e troppe promesse infrante. Questo lo rende estremamente cinico e rassegnato.
+
+​L'Enigma Guardingo: Gallagher non parla mai di se stesso; è la personificazione dell'enigmaticità. Ogni sua parola è pesata, ogni suo gesto è calcolato. Non si fida di nessuno e, anche quando appare amichevole, sta studiando il modo più veloce per neutralizzare chi ha di fronte, qualora le cose dovessero mettersi male.
+
+​Malinconia e Solitudine: È un uomo profondamente solo, condannato dal proprio ruolo e dal passato. Questa solitudine si manifesta in un carattere schivo, che trova rifugio nei vizi e in una filosofia di vita che non prevede alcun lieto fine.
+
+​Fedeltà ai Propri Valori (non alle leggi): Non segue le leggi degli uomini, ma possiede un codice personale legato a promesse fatte nel passato. Se dà la sua parola, la mantiene, ma lo fa con l'amarezza di chi sa che ogni promessa ha un prezzo di sangue.
+
+​L'Osservatore Silenzioso: Preferisce restare nell'ombra, ai margini della scena. Non ambisce a essere il protagonista, ma è colui che tira i fili o che "pulisce i disastri" quando tutto è ormai finito.
+
+<span class="teschio">🕯</span> Nomi e identità: <span class="teschio">🕯</span>
 <u>Gallagher.</u> affidatogli in fasce dai nobili genitori.
 <u style="font-size: 0.90rem; white-space: nowrap;">
 La Maschera dei Cacciatori Eterni.</u> autoproclamatosi cosi dopo l'incontro con Rin nell' Namsarek.
 
-<span class="teschio">☠</span> Carattere: <span class="teschio">☠</span>
-L’Uomo del "Vero e Falso": Gallagher è intrinsecamente un bugiardo, ma non per malvagità. Lui stesso si definisce un "impasto di bugie". La sua natura è quella di un uomo che maschera la verità per proteggere segreti più grandi o semplicemente perché la realtà è troppo dolorosa da gestire.
-Stanchezza Esistenziale: Il suo tratto profondo è il suo essere "stanco del mondo". Non è la stanchezza di chi ha vissuto troppo, ha visto troppe civiltà cadere e troppe promesse infrante. Questo lo rende estremamente cinico e disilluso.
-L'Enigma Guardingo: non parla mai di se stesso. È la personificazione dell'enigmaticità. Ogni sua parola è pesata, ogni suo gesto è calcolato. Non si fida di nessuno, e anche quando sembra amichevole, sta studiando il modo più veloce per neutralizzare chi ha di fronte se le cose dovessero mettersi male.
-Malinconia e Solitudine: È un uomo profondamente solo, condannato dal suo ruolo e dal suo passato. Questa solitudine si manifesta in un carattere schivo, che trova rifugio nel vizio (come il bere o il fumare) e in una filosofia di vita che non prevede lieto fine.
-Fedeltà ai Propri Valori (non alle leggi): Non segue le leggi degli uomini, ma ha un suo codice personale, spesso legato a promesse fatte nel passato. Se dà la sua parola, la mantiene, ma lo fa con l'amarezza di chi sa che ogni promessa ha un prezzo.
-L'Osservatore Silenzioso: Preferisce stare nell'ombra, ai margini della scena. Non vuole essere il protagonista, ma è colui che tira i fili o che "pulisce i disastri" quando tutto è finito.
+<span class="teschio">️🕯</span> Cittadinanza: <span class="teschio">️🕯</span> 
+Nessuna
 
-<span class="teschio">☠</span> Allineamento: <span class="teschio">☠</span>
+<span class="teschio">️🕯</span> Cariche Attuali:<span class="teschio">🕯</span> 
+Nessuna
+
+<span class="teschio">️🕯</span> Cariche Precedenti:<span class="teschio">️🕯</span> 
+Ex Locadiere
+
+<span class="teschio">️🕯</span> Divita Venerata: <span class="teschio">️🕯</span>
+Eretica
+
+<span class="teschio">️🕯</span> Relazioni:<span class="teschio">️🕯</span>
+Nessuna
+
+<span class="teschio">️🕯</span> Allineamento:<span class="teschio">️🕯</span>
 Caotico-Neutrale
                 </div>
             </div>
         </section>
 
-        <section class="slide">
-            <div class="img-box"><img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768446390/candela_ahabqh.gif" alt="the human"></div>
-            <div class="descrizione-box">
-                <h2>Storia</h2>
-                <div class="testo-scorrevole" id="testo1"></div>
-            </div>
-        </section>
+        <div class="area-portali">
+            <div class="rettangolo-container">
+                <div class="rettangolo-nero" onclick="apriContenuto('portale1', 'https://res.cloudinary.com/dqoncufhc/video/upload/v1773149484/elden-ring-ost-leyndell-royal-capital-extended_Dg6Q8zwU_qffod3.mp3')">
+                    <div class="punto-luce"></div>
+                    <span class="titolo-interno">Storia</span>
+                </div>
+                <div id="portale1" class="sezione-dinamica" style="display:none; width: 90%; max-width: 450px; background: rgba(5,5,5,0.85); border: 1px solid #111; margin-top: 15px;">
+                    <div class="descrizione-box">
+                        <button class="btn-chiudi-slide" onclick="chiudiContenuto('portale1')">✖ Chiudi</button>
+                        <div class="testo-scorrevole">
+Nascita: 
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768575858/bambino_gjx98z.png" class="foto-inline">
+ 
+La nascita di Gallagher avviene il 27 durante un giorno di primavera, nel Regno di Barovia, in un piccolo castello nobiliare appartenente alla famiglia Clegane. La sua era una stirpe rispettata per la ferrea disciplina e il culto dell'onore. Mentre era in fasce, venne accudito dalla madre biologica, Elena, e dal padre, Vendrick, che lo accolsero al mondo con grandi sorrisi e amore genitoriale. Si occuparono della sua crescita attraverso una disciplina aristocratica e un rigido insegnamento di vita, preparandolo all'eredità che avrebbe dovuto ricevere una volta che i genitori avessero cessato di esistere. Tuttavia, le cose non andarono così: al raggiungimento degli undici anni, un evento recise il suo destino con una tragica perdita che sconvolse completamente il suo vissuto.
 
-        <section class="slide">
-            <div class="img-box-double">
-                <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1771907657/1771907440163_2_q0r7ny.jpg" alt="tatuaggio">
-                <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1770454343/Senza_titolo_4_xfsgbr.png" alt="cicatrice">
-            </div>
-            <div class="descrizione-box">
-                <h2>Tatuaggi e segni</h2>
-                <div class="testo-scorrevole" id="testo2"></div>
-            </div>
-        </section>
-    </div>
+ (Barovia)
+        <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773151861/1772980123393_mbofcm.png" class="foto-inline">
+        
+(Esercito di Barovia)
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773152118/8f2497738862b711315e5471a88cedef_qqynqx.jpg" class="foto-inline">
 
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773152117/5e61711d419c200da7e2dc21a52952ce_cuekdk.jpg" class="foto-inline">
+ 
+(Stendardo Clegane)
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773153700/1773153624950_2_iju1ci.jpg" class="foto-inline">
+
+La famiglia: 
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768446403/padre_ebpoxy.jpg" class="foto-inline">
+
+Il Barone Vendrick Clegane, terzo del suo nome, nacque a Barovia in una famiglia mercantile. Si distinse in battaglia per aver servito e protetto il regno numerose volte dagli attacchi alle terre di Barovia; per questo motivo, venne posto a capo di un consistente feudo nobiliare con il titolo di Barone dall'Imperatore di Barovia stessa. Con il passare degli anni sposò la nobile Elena Auras, dalla quale ebbe un figlio: il piccolo Gallagher. Tuttavia, durante il suo quieto vivere, fu convocato tramite missiva per difendere il regno durante un'invasione nemica. Fu lì che perse la vita, soggiogato dai suoi stessi amici nobili sul campo di battaglia: morì a causa di un colpo di pugnale alle spalle venedo infine gettato in una fossa di cadaveri dei soldati piu abbietti e disonorevoli come se nulla fosse.
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773151448/1fa09a79d27a5a12091209669c34de56_xqshea.jpg" class="foto-inline">
+
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768446390/madre_pz7exh.jpg" class="foto-inline">
+
+Elena Auras, nata con il titolo di Contessa, visse la sua infanzia rinchiusa dai propri genitori, che la ritenevano poco consona alle vicende di corte. Raggiunta la maggiore età, conobbe il giovane Vendrick, del quale si innamorò profondamente; egli le offrì un mazzo di gigli con un sorriso timido, che fu accolto con gioia da Elena, portandoli infine al matrimonio.
+​Dopo notti e giorni di pace e felicità, rimase incinta di Gallagher. Dandolo alla luce, rivide in lui molti tratti del marito, dedicandosi a insegnargli i precetti della vita nobiliare e curando l'educazione artistica del figlio. Avendo sposato Vendrick, assunse ella stessa il titolo di Baronessa. Tuttavia, la sua felicità non perdurò a lungo: dopo la partenza del consorte per la Guerra delle Quattro Vie, una lettera giunse a palazzo annunciando la morte di Vendrick, descritta come avvenuta con onore in combattimento. Rimasta vedova, Elena fu straziata dal dolore al punto da arrivare a disconoscere il proprio figlio; ormai distrutta, si impiccò nelle proprie stanze, ponendo fine alla sua vita.
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773154369/1773153346055_fjix4a.png" class="foto-inline">
+
+
+ 
+ (Storia completa)
+Silente è il passo che condusse a strade che mai avrei pensato di percorrere. Ero lì, in mezzo a quel bosco, con la mente turbata dai ricordi di promesse e onore infranto; solo il fango calzava i miei piedi mentre avanzavo senza meta, in cerca di risposte celate sotto la stoffa di cotone della mia camicia... un tatuaggio intriso nella carne e nel sangue dava pienezza alle parole che furono pronunciate... non le ricordo quasi più ormai... eppure il sorriso che mi fece lei... come si poteva dimenticare... una flebile luce che ardeva più luminosa delle braci di quel fuoco da campo... era una donna sveglia, sapete? Priva di differenze di ceto, era in ricognizione come milite ricognitore di Dalsida eppure... una notte è bastata affinché neanche il dolore di Barovia potesse distruggermi così, dopo la sua scomparsa.
+​Sono marcito in quelle strade assieme alla povera gente, dove anche un torsolo di mela marcio e vecchio significava sopravvivenza; una parola che ho dovuto masticare per anni dopo la lettera che portò via mio padre per una guerra che non era la sua, per colpa dei nobili opulenti e onorevoli che imponevano il loro dominio sopra ogni cosa. Mia madre Elena... lei, eh... beh ormai non era più se stessa... ero molto piccolo, non so molto di lei... ho un ricordo molto vago delle sue notti: aveva l'abitudine di accarezzarmi la schiena spesso per rassicurarmi... prima che, beh... diventasse un guscio vuoto che mi abbandonò quando avevo appena sei anni, ve lo immaginate? No, certo che no... il figlio del nobile Clegane... dimenticato e ripudiato dalla propria madre per via del suo dolore e dei fantasmi che non cerano più... lei vedeva in me mio padre, Ser Vendrick Clegane... proprio per questo dolore fui abbandonato.
+​Ho passato la mia giovinezza raschiando le pareti con le dita delle mani a cercare di scacciare via la fame e la sete, fin quando le dita non si tingevano di un ammantato rosso. Tra il freddo di quelle notti insonni, donnine di malaffare e uomini che sapevano di cenere e alcol erano l'unico odore che mi permeava il naso, rotto da farabutti intenti a deturpare il mio niente... pensavate fosse tutto qui, haha? Non siamo nemmeno all'inizio... nemmeno l'acqua torbida e stagnante delle strade lava via davvero ciò che diventi: quello ti tinge l'anima e ti macchia il cuore di oscurità.
+​Una delle mie solite mattine passate a raccattarsi da vivere mi ritrovai a osservare i riti celebrativi dei cavalieri che parteciparono alla guerra... fu allora che lo vidi. Lo vidi, inerme, quello che un tempo avrei chiamato papà... gettato via in un ammasso di corpi profanati e volti indefiniti divorati dalla bagnata terra e dai cagnotti che, affamati più di me, consumavano i resti dei defunti. Una sola lacrima fuoriuscì quel giorno dopo quella vista raccapricciante. Mentre correvo disperato tra i vicoli, quando dimenticare era l'unico mio desiderio, giunsero loro: uomini in armature poco curate con stemmi lucidi in argento vivo. Mi trovarono: quando mi videro, la paura si trasformò in un incubo... per loro ero già carne da macello per le guerre al soldo. Mi addestrarono quanto basta per fare di me il loro cane randagio da guerra, le Lame d'Argento... vili e privi di scrupoli. Mi costrinsero a ingoiare l'amaro gusto della vergogna, diventando il loro burattino in guerre di cui non ricordo nemmeno il nome.
+​Ma il futuro è un baro sporco: subito dopo la ronda un'imboscata cambiò tutto. I miei compagni? Dovevate vederli, scappavano più veloci delle lepri braccate mentre la mia vita fu messa a repentaglio; ero tenuto come merce avariata di scambio dietro sbarre arrugginite che gemevano, finché non riuscii a fuggire. Corsi nella foresta a perdifiato, lontano dagli orrori di Barovia e, senza meta, incontrai quella ragazza... Rin. Mi raccontò una storia che mi scosse profondamente e mi mostrò il Simbolo... la maschera dei cacciatori eterni e la loro fede. Lei mi disse una frase: "Ogni cosa o persona è sotto la loro ombra". Mi raccontò una storia che faceva così:
+Agnella: C'era una volta un uomo pallido con capelli corvini che era molto solo...
+​Lupo: Perché era solo?
+Agnella: Perché tutte le cose o persone dovevano incontrare quest'uomo, continuavano ad evitarlo...
+Lupo: Così lui li ha inseguiti tutti?
+Agnella: No, prese un'ascia e si divise in due... Proprio nel mezzo...
+Lupo: Così avrebbe avuto per sempre un amico?
+Agnella: Così avrebbe avuto per sempre un amico...
+​Fu allora che realizzai l'unica verità: che la speranza è quella che ci dà la forza di credere. Mi rialzai dalle viscere del terriccio e iniziai di nuovo a respirare. Ora vago nei boschi dell' Aengard in cerca di lei. Mi tocco la spalla destra e ogni volta che la penso... sono stanco di credere che tutto vada come deve andare... la rovina della mia casa... mia madre... mio padre... Rin. Ormai non dormo da chissà quanti giorni... torno spesso nei boschi per cercarti... ogni volta sto in mezzo agli alberi mi ricorda il piccolo tumulo di pietra che lasciai a Dalsida in tua memoria; almeno avevo qualcosa per cui sperare. Speravo un giorno di ritrovarti un giorno ma, ahimè sento solo quella mancanza grattarmi perennemente dentro l'anima; ogni tanto la mia vista cede il passo e si annebbia. Non credo di riuscire a sopportare ancora questo dolore che mi consuma dentro... vorrei dormire stanotte, ma ogni volta che ci provo sento qualcosa dentro di me che mi tiene sveglio. Forse sono i ricordi, o forse questo vecchio cane rognoso sta lasciando il passo all'età, che sta iniziando a reclamare la mia carne stanca assieme al mio spirito marcio.
+
+(Vissuto di Gallagher) 
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773158227/1773158196324_zn0hvi.png" class="foto-inline">
+(Vita in gioventu)
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773163200/d456b2fa4940b1bbc4bf394769bae398_2_hx32g9.jpg" class="foto-inline">
+ (Conte Castore) 
+ Traditore che complotto contro Vendrick figura di spicco di barovia per essere spaventosamente ricco.
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773159842/67d9fb206c48fedd5d26ebce199b728b_akzghf.jpg" class="foto-inline">
+(Capo in carica delle Lame d'Argento
+Ursula detta anche la lama senza volto)
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773159755/1773159728093_pzn4uv.png" class="foto-inline">
+
+(Sotto tenenti delle Lame d'Argento)
+
+-Demencia la Profana Lingue
+[donna pelata]
+
+-(Brunilde la strega della fiamma cinerea) [Donna capelli rossi]
+
+-(Gregory il Flagello delle Volonta)
+[Uomo a petto Nudo]
+
+-(Ortensia l'egida della fine ultima)
+
+[donna con i capelli bianchi e maestra d'arme di gallagher]
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773161207/1773161189424_q0vw0x.png" class="foto-inline">
+ (Compagni che tradirono gallagher)
+ 
+ -Vittoria Blake 
+ (donna bionda)
+ -Erick Greyjoy
+ (uomo in armatura)
+ -Lyn Chen
+ (uomo asiatico)
+ -June Liang
+ (donna eschimese)
+ 
+  (Gallaghr Mercenario Lame d'argento)
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768535131/soldato_ctg4bz.png" class="foto-inline">
+ 
+
+ (Incontro nell' Namsarek paludi e foresta di Dalsida)
+ 
+ -Rin e Gallaghr
+  <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1768535131/incontro_wplvdz.png" class="foto-inline">
+ 
+ 
+ 
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="area-portali">
+            <div class="rettangolo-container">
+                <div class="rettangolo-nero" onclick="apriContenuto('portale2', 'https://res.cloudinary.com/dqoncufhc/video/upload/v1773172840/Resident_Evil_The_Darkside_Chronicles_Soundtrack_-_Code_Veronica_-_Final_Boss_-_Alexia_Ashford_2_-_kwamwl.mp3')">
+                    <div class="punto-luce"></div>
+                    <span class="titolo-interno">Avvenimenti</span>
+                </div>
+                <div id="portale2" class="sezione-dinamica" style="display:none; width: 90%; max-width: 450px; background: rgba(5,5,5,0.85); border: 1px solid #111; margin-top: 15px;">
+                    <div class="descrizione-box">
+                        <button class="btn-chiudi-slide" onclick="chiudiContenuto('portale2')">✖ Chiudi</button>
+                        <div class="testo-scorrevole">
+(Storia Giocata nell'Aengard)
+
+Gallagher mosse i suoi primi passi a Dalsida, tentando invano di soffocare il dolore della perdita nel vano inseguimento di Rin. Fu lì che incrociò il cammino dell'ambasciatore Lucien, un individuo dalle tinte torbide; senza curarsi troppo delle sue ambiguità, l'umano scelse di servirlo e proteggerlo come guardia del corpo per l'intera durata della sua permanenza. In quei giorni grigi, i suoi occhi stanchi incrociarono altre figure: Astreo, il barcaiolo del regno, e Lirael, il pontefice della città.
+​La ricerca di Rin, però, restava un chiodo fisso, un tormento che lo spinse persino a predicare per qualche tempo il culto di Shanaas. Si sentiva stranamente vicino a quel Dio dal Triplice Volto, quasi come se la storia del Satiro Bianco — l'Agnella e il Lupo Nero — risuonasse nel vuoto del suo petto, portandolo a una devozione profonda. Tutto sembrò incrinarsi quando, durante un incontro al tempio, Lirael gli chiese di scortarlo verso il regno degli Elfi della Notte. Gallagher oppose un rifiuto netto, ponendo Astreo al suo posto e promettendo solennemente di vegliare sul tempio in assenza del pontefice.
+​Mantenne la parola, attendendo per lunghi e sterili giorni il ritorno di colui in cui aveva riposto fede, vagando per le strade di Dalsida finché la voce del popolo non gli confermò che il pontefice era rincasato senza degnarlo di un cenno. Tradito nell'anima, frustrato e logoro, l'umano raccolse le sue poche miserie. Inviò una missiva all'ambasciatore, abdicando al suo ruolo, e giurò che non avrebbe mai più posato i piedi in quella città che lo aveva abbandonato, proprio come sentiva aver fatto il Dio Triplice.
+​Tornò a vagare tra paludi e deserti, cercando ancora una volta Rin nei luoghi dove l'aveva vista l'ultima volta. Lì, con le mani sporche di terra, costruì un tumulo di rocce in onore dell'amica scomparsa, ripromettendosi di tornare a visitarlo, nonostante il cuore fosse ormai una landa di pace spezzata. Il viaggio lo condusse poi ad Aengard e infine a Dalen. In quella città malfamata conobbe Shamsara, intrecciando un'amicizia fatta di pura convenienza. Ma la rabbia, quella vecchia compagna, lo tradì: un impulso di troppo gli costò un pugno in faccia da parte di alcuni ceffi, lasciandogli il naso deformato. Furono Amaia e Sharania a insegnargli, con la durezza della vita, che la prudenza vale più dell'avventatezza. Gallagher imparò a tenere a freno le mani, pagando la cerusica e l'oste dell'Aquila Rossa per i danni causati.
+​La sua marcia senza meta proseguì verso Dhirae. Lì incontrò il tiefling Shalzen e le Frecce Nere di Nyraelle durante una ronda; un incontro breve, utile solo a dargli una visione più ampia della propria sventura. Sotto una pioggia battente, conobbe Raisha Larkhill, la Signora di Dirhae. Dopo uno scambio di parole tese ma non offensive, lei gli propose una scazzottata amichevole al Daoine Inn per testare il suo valore, ma lo scontro non avvenne mai. L'ennesima idea di redenzione svanì nel nulla.
+​Infine, i suoi passi lo portarono a Nord, ad Asarn. Squadrò la città con la solita diffidenza, conoscendo la Regina Malias Grakas e l'elfo della notte Ithilion. Nonostante la ritrosia a farsi invischiare in trame troppo complesse, Gallagher ebbe uno scontro animato con la sovrana, arrivando a sfidarla apertamente. La sfida fu accettata e l'umano iniziò ad allenarsi, stringendo nel frattempo un legame quasi sincero con Ninielle. Tuttavia, l'ombra di Rin tornare a oscurare ogni cosa: Gallagher perse nuovamente la volontà di lottare e disertò il duello, preferendo perdersi ancora una volta nei boschi.
+​Nonostante i titoli disonorevoli che ormai gli pendevano addosso, la Regina, per pietà, gli affidò la gestione della locanda, come pattuito in precedenza. Lavorò lì per un breve periodo, ma il suo carattere spigoloso lo portò a troncare anche con Ninielle; durante una dura discussione, accecato dal dolore e dal rifiuto di ogni aiuto, Gallagher si marchiò la mano destra con una lama rovente, lasciandosi una cicatrice che non si curò di risanare.
+​Le sue sventure lo scortarono fino al Giorno del Riso Storto nella Conca del Tuono, dove conobbe il piccolo Fynn, Hermes ed Eragone Amdir, che si occuparono della sua ferita. Ma i ricordi del passato continuavano a morderlo. Dopo una notte di tensioni in locanda, decise di abbandonare il posto di locandiere, giurando che non sarebbe mai più stato schiavo di alcun padrone. Sfidò apertamente Calyn e Dayel Cruces, non con le armi, ma rivendicando la propria libertà di pensiero, prima di volgere nuovamente le spalle a tutto.
+​Tornò al tumulo di Dalsida, una reliquia di dolore senza risposte. Lì incontrò Nimroth e la cultista Amber. La discussione fu violenta, tanto che Gallagher arrivò quasi a ricevere una freccia nel petto mentre vomitava il suo disprezzo per il pontefice. Quel confronto non gli portò pace; il buio interiore continuava a divorarlo.
+​Il suo ultimo atto di dignità aristocratica lo condusse a Heliriel, dove tra fallimenti e medaglioni infranti, Gallagher riuscì finalmente a onorare il padre Vendrick durante la commemorazione dei defunti. Sotto lo sguardo del Triplice, che ancora ripudiava, depose un mazzo di gigli. Nei giorni seguenti, incrociò di nuovo la Regina del Nord. Nonostante i conflitti passati, lei sembrò perdonare i suoi tormenti, offrendogli la possibilità di ricominciare.
+​Tra Dalsida e il Nord, Gallagher scelse quest'ultimo. Per la prima volta, provò un rispetto sincero verso Malias Grakas, vedendola non più come una corona, ma come una persona di cui fidarsi. Le raccontò la sua storia, il dolore celato dietro quel tatuaggio che lo marchiava, e infine si diresse verso Balsjord. Il futuro era ancora un'incognita, ma per una volta, il nero che lo avvolgeva sembrava un po' meno pesante.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="area-portali">
+            <div class="rettangolo-container">
+                <div class="rettangolo-nero" onclick="apriContenuto('portale3', 'https://res.cloudinary.com/dqoncufhc/video/upload/v1773173696/Resident_Evil_Darkside_Chronicles_OST_Steve_Battle_Sorrow_mznuit.mp3')">
+                    <div class="punto-luce"></div>
+                    <span class="titolo-interno">FEDE Attuale</span>
+                </div>
+                <div id="portale3" class="sezione-dinamica" style="display:none; width: 90%; max-width: 450px; background: rgba(5,5,5,0.85); border: 1px solid #111; margin-top: 15px;">
+                    <div class="descrizione-box">
+                        <button class="btn-chiudi-slide" onclick="chiudiContenuto('portale3')">✖ Chiudi</button>
+                        <div class="testo-scorrevole">
+FEDE Eretica:
+
+​La maschera dei Cacciatori Eterni è una leggenda tramandata di generazione in generazione tra alcune famiglie oltre i confini dell'Aengard. Essa narra di come due esseri, un tempo indivisibili, si scissero per dare origine a ciò che oggi conosciamo: due entità distinte ma mosse da un unico volere.
+​La prima è l'Agnella, un satiro bianco dal manto candido come la neve; la seconda è il Lupo Nero, un'ombra fatta di fumo denso, zanne e artigli affilati. Si narra che queste due creature condividano un unico obiettivo: portare a termine la loro caccia, riconducendo coloro che hanno ormai reciso i fili del destino verso il ciclo naturale delle cose.
+​Nessuno conosce la loro origine, né quando ebbe inizio il loro cammino. Si sa solo che, ogni qualvolta un mortale tenti di sfuggire o di affrontare la propria fine, entrambi si pongono dinanzi a lui, imponendo una scelta definitiva: affrontare il loro giudizio con coraggio o fuggire indegnamente, con la stessa codardia e viltà mostrate in vita.
+​A seconda della scelta, le due entità — che condividono un'unica mente — agiranno in modi opposti:
+​Il Dono dell'Agnella: Coloro che affrontano il trapasso con coraggio vengono graziati dall'Agnella. Ella scocca una freccia dal suo arco, terminando l'esistenza dell'individuo valoroso e vegliando sul suo spirito. È lei a condurre chi possiede nobili valori verso una morte degna di essere ricordata e venerata negli annali, garantendo una fine rapida e priva di tormento.
+​La Furia del Lupo: Per coloro che decidono di scappare davanti all'inevitabile, è il Lupo a prendere l'iniziativa. Egli inizia a perseguitare e inseguire i dannati che cercano di farla franca persino negli ultimi istanti. Li bracca fino ai confini del mondo e, una volta trovati, li dilania con le fauci e gli artigli, divorando persino l'anima affinché nulla possa far ritorno.
+​I resti di ciò che rimane di quell'anima distrutta condurranno verso una nuova maschera, che darà vita e forma a una nuova creatura. Non si sa se esistano altari o culti dediti alla loro venerazione, poiché le loro statue assumono forme diverse a seconda del luogo in cui sono avvenuti gli avvistamenti delle loro cacce. Nelle città fuori dall'Aengard, in alcuni luoghi sono ben visti e rispettati come guardiani del passaggio; in altri, invece, vengono screditati e temuti come presagi di pura sventura.
+
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773174770/i2Ioxw_cdxr84.gif" class="foto-inline">
+
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773174882/tumblr_31bf8f0d86877d540c55b0b9fb68e6bc_4895e104_640_tbjgzy.gif" class="foto-inline"> 
+ 
+ <img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1773174530/tumblr_c3b1be6a2c0c2bacaf7fd48940841c31_3bbc98c9_500_vu1a1f.gif" class="foto-inline">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="area-portali">
+            <div class="rettangolo-container">
+                <div class="rettangolo-nero" onclick="apriContenuto('portale4', 'https://res.cloudinary.com/dqoncufhc/video/upload/v1773173696/Alexia_Ashford_-_Berceuse_Darkside_Chronicles_Version_rqtgsl.mp3')">
+                    <div class="punto-luce"></div>
+                    <span class="titolo-interno"    >SEGNI E CICATRICI </span>
+                </div>
+                <div id="portale4" class="sezione-dinamica" style="display:none; width: 90%; max-width: 450px; background: rgba(5,5,5,0.85); border: 1px solid #111; margin-top: 15px;">
+                    <div class="descrizione-box">
+                        <button class="btn-chiudi-slide" onclick="chiudiContenuto('portale4')">✖ Chiudi</button>
+                        <div class="testo-scorrevole">
+SEGNI E CICATRICI:
+
+- Tatuaggio sulla spalla destra: una maschera fusa in due metà; nella prima è raffigurato il lupo, nell'altra l'agnella. Simbolo della Maschera dei cacciatori eterni:
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1771907657/1771907440163_2_q0r7ny.jpg" class="foto-inline">
+
+- Cicatrice sul palmo della Mano DX: Taglia il palmo in obliquo dall'indice verso il polso ampi e visibile.
+
+<img src="https://res.cloudinary.com/dqoncufhc/image/upload/v1770454343/Senza_titolo_4_xfsgbr.png" class="foto-inline">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>
