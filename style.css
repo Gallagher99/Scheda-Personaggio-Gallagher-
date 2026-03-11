@@ -1,89 +1,118 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background-color: #000; color: #ccc; font-family: 'Georgia', serif; overflow-x: hidden; }
-
-.header-main { 
-    width: 100%; padding: 60px 10px 30px 10px; text-align: center; 
-    opacity: 0; transform: translateY(-10px);
-    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+body { 
+    background-color: #000; 
+    color: #E1E1E1; 
+    font-family: 'Junge', serif; 
+    overflow-x: hidden; 
 }
-.header-main.visible { opacity: 1; transform: translateY(0); }
 
-/* Titolo riadattato per non sovrastare il sottotitolo */
+.background-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://res.cloudinary.com/dqoncufhc/image/upload/v1773056028/1773055968303_cz1qgg.png') no-repeat center center fixed;
+    background-size: cover; z-index: -2;
+}
+
+/* --- HEADER --- */
+.header-main { 
+    width: 100%; 
+    padding: 60px 20px 30px 20px; 
+    text-align: center; 
+}
+
 .header-main h1 { 
-    font-size: 1.4rem; text-transform: uppercase; letter-spacing: 5px; 
-    background: linear-gradient(to bottom, #ffffff 0%, #666666 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    display: inline-block;
-    line-height: 1.3;
-    margin-bottom: 10px;
+    font-family: 'Junge', serif !important; 
+    font-size: 1.6rem !important; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    color: #f0f8ff; 
+    text-shadow: 2px 2px 4px #000, 0 0 10px #ffffff;
+    display: block; 
+    line-height: 1.2; 
+    margin-bottom: 15px; 
 }
 
 .header-main .subtitle { 
-    font-size: 0.7rem; 
-    text-transform: uppercase; 
-    letter-spacing: 4px; 
-    color: #1e3a8a; 
-    text-shadow: 0 0 10px #2563eb, 0 0 15px #1e3a8a;
-    font-weight: bold;
+    font-family: 'Love Ya Like A Sister', cursive !important; 
+    font-size: 1.1rem !important; 
+    letter-spacing: 1px; 
+    color: #00FF7F; 
+    text-shadow: 2px 2px 4px #000, 0 0 8px rgba(0, 255, 127, 0.6); 
+    font-weight: bold; 
     display: block; 
 }
 
-.container-verticale { display: flex; flex-direction: column; align-items: center; }
-.slide { width: 90%; max-width: 450px; margin-bottom: 70px; background: #050505; border: 1px solid #111; }
+/* --- CONTENUTI --- */
+.container-verticale { display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; width: 100%; }
+
+.slide { 
+    width: 90%; max-width: 450px; margin-bottom: 70px; 
+    background: rgba(5, 5, 5, 0.75); border: 1px solid #111; display: block;
+}
 
 .img-box img { width: 100%; display: block; }
+.descrizione-box { padding: 30px 25px; text-align: center; width: 100%; }
+.teschio { color: #555;  font-size: 0.8rem; margin: 0 10px; vertical-align: middle; }
 
-/* Stile per immagini affiancate */
-.img-box-double { display: flex; width: 100%; border-bottom: 1px solid #111; }
-.img-box-double img { width: 50%; display: block; object-fit: cover; aspect-ratio: 1/1; }
-
-.descrizione-box { padding: 30px 25px; text-align: center; }
-.teschio { color: #555; font-size: 0.8rem; margin: 0 10px; vertical-align: middle; }
-
-.testo-blu-notte {
-    color: #1e3a8a;
-    text-shadow: 0 0 10px #2563eb, 0 0 15px #1e3a8a;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
-    line-height: 1.5;
+.testo-blu-notte { 
+    font-family: 'Love Ya Like A Sister', cursive !important; 
+    font-size: 1.3rem; 
+    color: #00FF7F; 
+    text-shadow: 2px 2px 4px #000, 0 0 10px rgba(0, 255, 127, 0.5); 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 25px; 
+    line-height: 1.2; 
 }
 
-.descrizione-box h2 { 
-    font-size: 0.9rem; text-transform: uppercase; letter-spacing: 4px; 
-    background: linear-gradient(to bottom, #fff 10%, #555 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 8px; 
-}
-
-/* Scrollbar e area di testo */
-.testo-scorrevole {
+.testo-scorrevole { 
+    font-family: 'Junge', serif; 
     height: 300px; 
     overflow-y: auto; 
-    text-align: center;
+    text-align: center; 
     font-size: 0.95rem; 
     line-height: 1.8; 
-    color: #666;
+    color: #E1E1E1; 
     padding: 0 15px; 
     white-space: pre-wrap; 
 }
+.testo-scorrevole::-webkit-scrollbar { width: 1px; }
+.testo-scorrevole::-webkit-scrollbar-thumb { background: #00FF7F; }
 
-/* Altezza specifica per il testo dei tatuaggi per forzare lo scroll se necessario */
-#testo2 {
-    max-height: 150px;
+/* --- AUDIO --- */
+.audio-bar-container {
+    position: fixed; bottom: 20px; right: 20px; z-index: 1002; 
+    background: rgba(0,0,0,0.85); border: 1px solid #00FF7F; border-radius: 50%;
+    width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 10px #00FF7F;
+}
+#seek-slider, #time-display { display: none !important; }
+#audio-btn { background: none; border: none; color: #00FF7F; cursor: pointer; font-size: 1.3rem; }
+
+/* --- PORTALI --- */
+.area-portali { display: flex; flex-direction: column; width: 100%; align-items: center; gap: 20px; margin-bottom: 50px; }
+.rettangolo-container { width: 100%; display: flex; flex-direction: column; align-items: center; }
+.rettangolo-nero {
+    width: 320px; height: 90px; background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00FF7F; display: flex;
+    align-items: center; justify-content: center; cursor: pointer; position: relative;
+}
+.punto-luce {
+    position: absolute; top: -5px; left: 50%; transform: translateX(-50%);
+    width: 6px; height: 6px; background: #00FF7F; border-radius: 50%;
+    box-shadow: 0 0 10px #00FF7F;
+}
+.titolo-interno { 
+    font-family: 'Junge', serif; 
+    font-size: 0.85rem; 
+    letter-spacing: 3px; 
+    color: #E1E1E1; 
+    text-transform: uppercase; 
 }
 
-.testo-scorrevole::-webkit-scrollbar { width: 1px; }
-.testo-scorrevole::-webkit-scrollbar-thumb { background: #333; }
+/* --- IMMAGINI --- */
+.foto-inline { width: 200px; height: auto; vertical-align: middle; margin: 10px 5px; border: 1px solid #00FF7F; display: inline-block; border-radius: 2px; }
+.btn-chiudi-slide { background: none; border: 1px solid #00FF7F; color: #00FF7F; padding: 2px 8px; font-size: 0.65rem; cursor: pointer; float: right; margin-bottom: 15px; }
 
-#audio-btn {
-    position: fixed; bottom: 20px; right: 20px; z-index: 1000;
-    background: rgba(0,0,0,0.7); border: 1px solid #1e3a8a;
-    color: #1e3a8a; border-radius: 50%; width: 45px; height: 45px;
-    cursor: pointer; font-size: 1.2rem; display: flex;
-    align-items: center; justify-content: center;
-    box-shadow: 0 0 10px #1e3a8a;
+@media (max-width: 600px) {
+    .slide { width: 95%; }
 }
