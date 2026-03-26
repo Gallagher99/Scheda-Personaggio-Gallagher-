@@ -165,3 +165,38 @@ body {
 @media (max-width: 600px) {
     .slide { width: 95%; }
 }
+
+/* Il contenitore principale delle scritte */
+#lyrics-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center; /* Centra il testo */
+    min-height: 80px;   /* Altezza minima per evitare che il resto della pagina balli quando sparisce il testo */
+    background-color: rgba(0, 0, 0, 0.05); /* Un leggero sfondo (opzionale) */
+    border-radius: 10px;
+}
+
+/* Lo stile del testo vero e proprio */
+#lyrics-text {
+    font-family: 'Junge', ;
+    font-size: 1.8rem;   /* Testo bello grande */
+    font-weight: 600;
+     text-shadow: 2px 2px 4px #000, 0 0 10px #ffffff;
+    color: #ffffff;         /* Cambialo in #fff se hai uno sfondo scuro */
+    margin: 0;
+    
+    /* Animazione per rendere il cambio di frase meno brusco */
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Classe opzionale per quando il testo "entra" (da gestire poi via JS se vuoi) */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
