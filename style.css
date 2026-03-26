@@ -43,7 +43,7 @@ body {
     position: relative;
 }
 
-/* --- IL VERO GLITCH DISTRUTTIVO (ISPIRATO AL VIDEO) --- */
+/* --- IL VERO GLITCH DISTRUTTIVO --- */
 .header-main.visible .glitch-text {
     position: relative;
     display: inline-block;
@@ -60,22 +60,18 @@ body {
     opacity: 0.8;
 }
 
-/* Effetto 'Taglio e Sparizione' Ciano */
 .header-main.visible .glitch-text::before {
     left: 5px;
     text-shadow: -4px 0 #0b8dff;
-    /* steps(1) elimina la fluidità per far scattare il glitch come nel video */
     animation: glitch-brutal 1.2s infinite steps(1);
 }
 
-/* Effetto 'Salto e Sparizione' Magenta */
 .header-main.visible .glitch-text::after {
     left: -5px;
     text-shadow: 4px 0 #d6dade;
     animation: glitch-brutal 4.5s infinite steps(1) reverse;
 }
 
-/* Animazione che distrugge il testo con tagli orizzontali e sparizioni */
 @keyframes glitch-brutal {
     0%   { clip: rect(0px, 9999px, 0px, 0); opacity: 0; }
     5%   { clip: rect(10px, 9999px, 20px, 0); opacity: 1; transform: translateX(-10px); }
@@ -166,37 +162,40 @@ body {
     .slide { width: 95%; }
 }
 
-/* Il contenitore principale delle scritte */
 #lyrics-container {
     width: 100%;
     margin-top: 20px;
     padding: 15px;
-    text-align: center; /* Centra il testo */
-    min-height: 80px;   /* Altezza minima per evitare che il resto della pagina balli quando sparisce il testo */
-    background-color: rgba(0, 0, 0, 0.05); /* Un leggero sfondo (opzionale) */
+    text-align: center;
+    min-height: 80px;
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 
-/* Lo stile del testo vero e proprio */
 #lyrics-text {
-    font-family: 'Junge', ;
-    font-size: 1.8rem;   /* Testo bello grande */
+    font-family: 'Junge', serif;
+    font-size: 1.8rem;
     font-weight: 600;
-     text-shadow: 2px 2px 4px #000, 0 0 10px #ffffff;
-    color: #ffffff;         /* Cambialo in #fff se hai uno sfondo scuro */
+    text-shadow: 2px 2px 4px #000, 0 0 10px #ffffff;
+    color: #ffffff;
     margin: 0;
-    
-    /* Animazione per rendere il cambio di frase meno brusco */
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: all 0.5s ease-out;
 }
 
-/* Classe opzionale per quando il testo "entra" (da gestire poi via JS se vuoi) */
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+/* --- EFFETTO KARAOKE DISSOLVENZA --- */
+.frase-animata {
+    animation: comparsaFumo 0.8s forwards;
 }
 
-.fade-out {
-    opacity: 0;
-    transform: translateY(-10px);
+@keyframes comparsaFumo {
+    0% {
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(0.95) translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1) translateY(0);
+    }
 }
