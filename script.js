@@ -81,7 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const fraseValida = [...canzoniere].reverse().find(f => f.tempo <= tempoAttuale);
                 
                 if (fraseValida && lyricsDisplay.innerText !== fraseValida.testo) {
+                    lyricsDisplay.classList.remove('frase-animata');
+                    void lyricsDisplay.offsetWidth; 
                     lyricsDisplay.innerText = fraseValida.testo;
+                    lyricsDisplay.classList.add('frase-animata');
                 }
             }
         };
