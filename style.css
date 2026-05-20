@@ -213,10 +213,10 @@ body {
 }
 
 .container-miniature img { 
-    width: calc(50% - 10px); 
+    width: calc(100% - 10px); 
     aspect-ratio: 1/1; 
     object-fit: cover; 
-    border: 1px solid #00ffff; 
+    border: 1px solid #0b8dff; 
     border-radius: 4px; 
     box-sizing: border-box; 
 }
