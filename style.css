@@ -36,8 +36,8 @@ body {
     font-family: 'Syne Mono', cursive !important; 
     font-size: 1.1rem !important; 
     letter-spacing: 1px; 
-    color: #0b8dff; 
-    text-shadow: 2px 2px 4px #000, 0 0 8px rgb(148,201,249); 
+    color: #dc143c; 
+    text-shadow: 2px 2px 4px #000, 0 0 8px rgb(248,0,53); 
     font-weight: bold; 
     display: block; 
     position: relative;
@@ -62,7 +62,7 @@ body {
 
 .header-main.visible .glitch-text::before {
     left: 5px;
-    text-shadow: -4px 0 #0b8dff;
+    text-shadow: -4px 0 #dc143c;
     animation: glitch-brutal 1.2s infinite steps(1);
 }
 
@@ -91,7 +91,7 @@ body {
 
 .slide { 
     width: 90%; max-width: 450px; margin-bottom: 70px; 
-    background: rgba(5, 5, 5, 0.75); border: 1px solid #111; display: block;
+    background: rgba(5, 5, 5, 0.75); border: 1px solid rgb(192,192,192); display: block;
 }
 
 .img-box img { width: 100%; display: block; }
@@ -101,8 +101,8 @@ body {
 .testo-blu-notte { 
     font-family: 'Syne Mono', cursive !important; 
     font-size: 1.3rem; 
-    color: #0b8dff; 
-    text-shadow: 2px 2px 4px #000, 0 0 10px rgb(148,201,249); 
+    color: #dc143c; 
+    text-shadow: 2px 2px 4px #000, 0 0 10px rgb(248,0,53); 
     font-weight: bold; 
     display: block; 
     margin-bottom: 25px; 
@@ -121,30 +121,30 @@ body {
     white-space: pre-wrap; 
 }
 .testo-scorrevole::-webkit-scrollbar { width: 1px; }
-.testo-scorrevole::-webkit-scrollbar-thumb { background: #71bdff; }
+.testo-scorrevole::-webkit-scrollbar-thumb { background: #c0c0c0; }
 
 /* --- AUDIO --- */
 .audio-bar-container {
     position: fixed; bottom: 20px; right: 20px; z-index: 1002; 
-    background: rgba(0,0,0,0.85); border: 1px solid #0b8dff; border-radius: 50%;
+    background: rgba(0,0,0,0.85); border: 1px solid #dc143c; border-radius: 50%;
     width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 0 10px #0b8dff;
+    box-shadow: 0 0 10px #dc143c;
 }
 #seek-slider, #time-display { display: none !important; }
-#audio-btn { background: none; border: none; color: #0b8dff; cursor: pointer; font-size: 1.3rem; }
+#audio-btn { background: none; border: none; color: #dc143c; cursor: pointer; font-size: 1.3rem; }
 
 /* --- PORTALI --- */
 .area-portali { display: flex; flex-direction: column; width: 100%; align-items: center; gap: 20px; margin-bottom: 50px; }
 .rettangolo-container { width: 100%; display: flex; flex-direction: column; align-items: center; }
 .rettangolo-nero {
     width: 320px; height: 90px; background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #0b8dff; display: flex;
+    border: 1px solid #dc143c; display: flex;
     align-items: center; justify-content: center; cursor: pointer; position: relative;
 }
 .punto-luce {
     position: absolute; top: -5px; left: 50%; transform: translateX(-50%);
-    width: 6px; height: 6px; background: #0b8dff; border-radius: 50%;
-    box-shadow: 0 0 10px #0b8dff;
+    width: 6px; height: 6px; background: #dc143c; border-radius: 50%;
+    box-shadow: 0 0 10px #dc143c;
 }
 .titolo-interno { 
     font-family: 'Junge', serif; 
@@ -155,8 +155,8 @@ body {
 }
 
 /* --- IMMAGINI --- */
-.foto-inline { width: 200px; height: auto; vertical-align: middle; margin: 10px 5px; border: 1px solid #0b8dff; display: inline-block; border-radius: 2px; }
-.btn-chiudi-slide { background: none; border: 1px solid #0b8dff; color: #0b8dff; padding: 2px 8px; font-size: 0.65rem; cursor: pointer; float: right; margin-bottom: 15px; }
+.foto-inline { width: 200px; height: auto; vertical-align: middle; margin: 10px 5px; border: 1px solid #dc143c; display: inline-block; border-radius: 2px; }
+.btn-chiudi-slide { background: none; border: 1px solid #dc143c; color: #dc143c; padding: 2px 8px; font-size: 0.65rem; cursor: pointer; float: right; margin-bottom: 15px; }
 
 @media (max-width: 600px) {
     .slide { width: 95%; }
@@ -216,7 +216,7 @@ body {
     width: calc(50% - 10px); 
     aspect-ratio: 1/1; 
     object-fit: cover; 
-    border: 1px solid #0b8dff; 
+    border: 1px solid #dc143c; 
     border-radius: 4px; 
     box-sizing: border-box; 
 }
