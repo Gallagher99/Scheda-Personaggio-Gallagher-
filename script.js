@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if(btn && track) {
         btn.onclick = () => {
-            if (track.paused) { track.play(); btn.innerText = "🔇"; }
-            else { track.pause(); btn.innerText = "🔊"; }
+            if (track.paused) { track.play(); btn.innerText = "𓆩ꨄ︎𓆪"; }
+            else { track.pause(); btn.innerText = "🗝"; }
         };
 
         track.ontimeupdate = () => {
