@@ -72,11 +72,12 @@ Le sue iridi color whisky, di un arancio smorzato, conservano un'attenzione clin
                     
 Voce: Lorenzo Scattorin "Joel Miller"
                     
-<audio controls style="width: 100%; max-width: 280px; height: 35px; margin: 10px auto; display: block; color-scheme: dark; filter: invert(1);">
-<source src="https://res.cloudinary.com/dqoncufhc/video/upload/v1784738463/last-of-us-part-ii-ita-joel-racconta-a-tommy-di-quando-ha-salvato-ellie_0skg8Qkp_tqmwmt.mp3" type="audio/mpeg">
-</audio>
-
-                    
+<div style="background: #121212; border: 1px solid #2a2a2a; border-radius: 25px; padding: 6px 16px; margin: 10px auto; max-width: 300px; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.8);">
+    <button id="btn-audio-scheda" onclick="var a=document.getElementById('audio-scheda'); if(a.paused){a.play(); this.textContent='❚❚';}else{a.pause(); this.textContent='▶';}" style="background: none; border: none; color: #ffffff; font-size: 14px; cursor: pointer; padding: 0; width: 20px; text-align: center;">▶</button>
+    <input type="range" id="slider-scheda" value="0" max="100" oninput="var a=document.getElementById('audio-scheda'); if(a.duration){a.currentTime = (this.value / 100) * a.duration;}" style="flex: 1; accent-color: #8b0000; cursor: pointer; height: 3px;">
+    <audio id="audio-scheda" src="https://res.cloudinary.com/dqoncufhc/video/upload/v1784738463/last-of-us-part-ii-ita-joel-racconta-a-tommy-di-quando-ha-salvato-ellie_0skg8Qkp_tqmwmt.mp3" ontimeupdate="var s=document.getElementById('slider-scheda'); if(this.duration){s.value = (this.currentTime / this.duration) * 100;}" onended="document.getElementById('btn-audio-scheda').textContent='▶';"></audio>
+</div>
+                   
 <span class="teschio">🩸</span> Carattere: <span class="teschio">🩸</span> 
   
 "Se il mondo fosse un posto migliore, non avrebbe comunque nulla da offrire a uno come me"
